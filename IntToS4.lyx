@@ -1,0 +1,2009 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usepackage{microtype}
+\usetheme{Frankfurt}
+\usepackage{tikz}
+\usepackage{bm}
+\usetikzlibrary{automata,positioning,arrows.meta}
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{split}
+\usepackage{ae,aecompl}
+\usepackage[italian]{babel}
+\uselanguage{italian}
+\languagepath{italian}
+\deftranslation[to=italian]{Definition}{Definizione}
+\deftranslation[to=italian]{Example}{Esempio}
+\deftranslation[to=italian]{Theorem}{Teorema}
+\deftranslation[to=italian]{Corollary}{Corollario}
+\definecolor{blue1}{RGB}{51,51,179}
+\definecolor{blue2}{RGB}{0,0,204}
+\definecolor{blue3}{RGB}{0,0,153}
+\setbeamercolor{author in head/foot}{fg=white, bg=blue3}
+\setbeamercolor{title in head/foot}{fg=white, bg=blue2}
+\setbeamercolor{date in head/foot}{fg=white, bg=blue1}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language italian
+\language_package none
+\inputencoding utf8
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.75in
+\topmargin 0.6in
+\rightmargin 0.75in
+\bottommargin 0.6in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+L'uso della logica modale per fornire una semantica classica alla logica
+ intuizionista
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Da Int a S4 e ritorno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Gabriele Vanoni
+\end_layout
+
+\begin_layout Institute
+Politecnico di Milano
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+PoliMi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+15 Dicembre 2016
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sommario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+La logica intuizionista
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+La logica intuizionista
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Le motivazioni
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Dalla seconda metà dell'800 le 
+\series bold
+dimostrazioni
+\series default
+ hanno perso in generale contenuto 
+\series bold
+computazionale
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Le dimostrazioni spesso non sono 
+\series bold
+costruttive
+\series default
+, provano l'esistenza di un oggetto ma non danno un 
+\series bold
+algoritmo
+\series default
+ per costruirlo.
+\end_layout
+
+\begin_layout Standard
+Brouwer capisce che questa mancanza è data dalla legge del 
+\series bold
+terzo escluso
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vdash p\lor\lnot p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Esempio
+\end_layout
+
+\end_inset
+
+Non possiamo asserire che 
+\begin_inset Formula $\forall n.f(n)=0\lor\exists n.f(n)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+La corrispondenza di Curry-Howard-Lambek (cenni)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+La logica intuizionista diventa fondamentale nel secondo dopoguerra nella
+ teoria dei 
+\series bold
+linguaggi di programmazione
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Infatti viene stabilita una 
+\series bold
+corrispondenza sintattica
+\series default
+ tra le dimostrazioni in 
+\series bold
+deduzione naturale
+\series default
+ e i programmi del 
+\series bold
+lambda-calcolo tipato semplice
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+La corrispondenza tra prove e programmi segna la nascita della moderna 
+\series bold
+teoria dei tipi
+\series default
+ (Martin-Lof, Coquand), dei 
+\series bold
+linguaggi funzionali
+\series default
+ (Lisp, Haskell) e dei 
+\series bold
+proof-assistant
+\series default
+ (Coq, HOL).
+ 
+\end_layout
+
+\begin_layout Itemize
+La corrispondenza viene poi estesa alla 
+\series bold
+teoria delle categorie
+\series default
+ e in particolare alle Categorie Cartesiane Chiuse (CCC) aventi come oggetti
+ i tipi (formule) e come morfismi i termini (dimostrazioni).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+L'interpretazione BHK
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Una dimostrazione di 
+\begin_inset Formula $A\wedge B$
+\end_inset
+
+ è data presentando una dimostrazione di 
+\begin_inset Formula $A$
+\end_inset
+
+ e una dimostrazione di 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Una dimostrazione di 
+\begin_inset Formula $A\vee B$
+\end_inset
+
+ è data presentando una dimostrazione di 
+\begin_inset Formula $A$
+\end_inset
+
+ o una dimostrazione di 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Una dimostrazione di 
+\begin_inset Formula $A\rightarrow B$
+\end_inset
+
+ è una costruzione che permette di trasformare qualsiasi dimostrazione di
+ A in una dimostrazione di B.
+\end_layout
+
+\begin_layout Itemize
+L'assurdo 
+\begin_inset Formula $\bot$
+\end_inset
+
+ non ha dimostrazione.
+\end_layout
+
+\begin_layout Itemize
+Una dimostrazione di 
+\begin_inset Formula $\lnot A$
+\end_inset
+
+ è una costruzione che trasforma ogni ipotetica dimostrazione di A in una
+ dimostrazione di 
+\begin_inset Formula $\bot$
+\end_inset
+
+ (ovvero una dimostrazione di 
+\begin_inset Formula $A\rightarrow\bot$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Ovviamente queste regole non forniscono una semantica formale, lasciando
+ generici i concetti di dimostrazione e costruzione.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Un calcolo alla Hilbert per 
+\series bold
+Int
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Heyting e Kolmogorov proposero per 
+\series bold
+Int
+\series default
+ un calcolo alla Hilbert con i seguenti schemi di assiomi:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\rightarrow(Q\rightarrow P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(P\rightarrow(Q\rightarrow R))\rightarrow((P\rightarrow Q)\rightarrow(P\rightarrow R))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\land Q\rightarrow P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\land Q\rightarrow Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\rightarrow(Q\rightarrow P\land Q)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\rightarrow P\lor Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q\rightarrow P\lor Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(P\rightarrow R)\rightarrow((Q\rightarrow R)\rightarrow(P\lor Q\rightarrow R))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\perp\rightarrow P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la regola di inferenza Modus Ponens.
+\end_layout
+
+\begin_layout Standard
+La logica 
+\series bold
+Int
+\series default
+ risulta quindi essere un sottoinsieme proprio della logica 
+\series bold
+L
+\series default
+, avendo questa come unico assioma in più il 
+\series bold
+principio del terzo escluso
+\series default
+ 
+\begin_inset Formula $P\lor(P\rightarrow\perp)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+La semantica di Kripke per 
+\series bold
+Int
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dobbiamo immaginare che se una proposizione 
+\begin_inset Formula $p$
+\end_inset
+
+ non è vera in un istante 
+\begin_inset Formula $x$
+\end_inset
+
+, non è detto che non lo diverrà in un futuro 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ La conoscenza evolve cioè da uno stato all'altro.
+ Tuttavia ciò che è vero ovviamente nel futuro rimane vero.
+\end_layout
+
+\begin_layout Itemize
+Possiamo quindi formalizzare il ragionamento costruendo un
+\series bold
+ frame
+\series default
+ di Kripke 
+\begin_inset Formula $\mathfrak{F=<W,R>}$
+\end_inset
+
+ con 
+\begin_inset Formula $\mathfrak{W}$
+\end_inset
+
+ insieme non vuoto dei mondi e 
+\begin_inset Formula $\mathfrak{R\subseteq W\times W}$
+\end_inset
+
+ relazione di accessiblità fra i mondi, su cui verranno costruiti i relativi
+ 
+\series bold
+modelli 
+\begin_inset Formula $\mathfrak{M=<F,V>}$
+\end_inset
+
+
+\series default
+ assegnando una funzione di valutazione 
+\begin_inset Formula $\mathfrak{V}:Var\mathcal{L}\rightarrow\mathcal{P}(\mathfrak{W})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Per dare il significato ad R di 
+\begin_inset Quotes eld
+\end_inset
+
+tempo
+\begin_inset Quotes erd
+\end_inset
+
+, richiediamo che 
+\begin_inset Formula $\mathfrak{R}$
+\end_inset
+
+ sia un ordine parziale, ovvero sia 
+\series bold
+transitiva
+\series default
+, 
+\series bold
+riflessiva
+\series default
+ e 
+\series bold
+antisimmetrica
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Richiediamo inoltre che la funzione di valutazione 
+\begin_inset Formula $\mathfrak{V}$
+\end_inset
+
+ garantisca che la verità venga mantenuta nel tempo, ovvero che se 
+\begin_inset Formula $x\in\mathfrak{V}(p)$
+\end_inset
+
+ e 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+ allora 
+\begin_inset Formula $y\in\mathfrak{V}(p)$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $p\in Var\mathcal{L}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+La semantica di Kripke per 
+\series bold
+Int 
+\series default
+(continua)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La valutazione delle formule su un mondo 
+\begin_inset Formula $x$
+\end_inset
+
+ di un modello 
+\series bold
+
+\begin_inset Formula $\mathfrak{M=<F,V>}$
+\end_inset
+
+
+\series default
+ costruito su un frame 
+\begin_inset Formula $\mathfrak{F=<W,R>}$
+\end_inset
+
+ procede dunque per induzione sulla costruzione della formula:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\mathfrak{M},x)\models p$
+\end_inset
+
+ sse 
+\begin_inset Formula $x\in\mathfrak{V}(p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\mathfrak{M},x)\models P\land Q$
+\end_inset
+
+ sse 
+\begin_inset Formula $(\mathfrak{M},x)\models P$
+\end_inset
+
+ e 
+\begin_inset Formula $(\mathfrak{M},x)\models Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\mathfrak{M},x)\models P\lor Q$
+\end_inset
+
+ sse 
+\begin_inset Formula $(\mathfrak{M},x)\models P$
+\end_inset
+
+ o 
+\begin_inset Formula $(\mathfrak{M},x)\models Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\mathfrak{M},x)\models P\rightarrow Q$
+\end_inset
+
+ sse per ogni 
+\begin_inset Formula $y$
+\end_inset
+
+ tale che 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+ se 
+\begin_inset Formula $(\mathfrak{M},y)\models P$
+\end_inset
+
+ allora 
+\begin_inset Formula $(\mathfrak{M},y)\models Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\mathfrak{M},x)\cancel{\models}\perp$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+segue quindi che 
+\begin_inset Formula $(\mathfrak{M},x)\models\lnot P$
+\end_inset
+
+ sse per ogni 
+\begin_inset Formula $y$
+\end_inset
+
+ tale che 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+ 
+\begin_inset Formula $(\mathfrak{M},y)\cancel{\models}P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si verifica facilmente per induzione sulla complessità della formula che
+ con questa costruzione se 
+\begin_inset Formula $P$
+\end_inset
+
+ è vera in 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+ allora 
+\begin_inset Formula $P$
+\end_inset
+
+ è vera anche in y.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Esempio: il principio del terzo escluso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Ci basta trovare un modello in cui 
+\begin_inset Formula $p\lor\lnot p\equiv p\lor(p\rightarrow\perp)$
+\end_inset
+
+ non sia valida.
+ Consideriamo un frame con soli due mondi 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $\mathfrak{R}=\{(x,x),(x,y),(y,y)\}$
+\end_inset
+
+, un'unica lettera proposizionale 
+\begin_inset Formula $p$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathfrak{V}(p)=\{y\}$
+\end_inset
+
+.
+ Rappresentiamo a sinistra del mondo ciò che è vero mentre a destra ciò
+ che non lo è (non è detto che sia falso!).
+\end_layout
+
+\begin_layout Example
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[node distance=20mm, auto, scale=1, transform shape]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node[label=above:$y$,label=left:{$p,p
+\backslash
+lor(p
+\backslash
+rightarrow
+\backslash
+perp)$},label=right:{$p
+\backslash
+rightarrow
+\backslash
+perp$}] (y) at (0,0) {$
+\backslash
+bullet$};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node[below of=y,label=below:$x$,label=right:{$p,p
+\backslash
+rightarrow
+\backslash
+perp,p
+\backslash
+lor(p
+\backslash
+rightarrow
+\backslash
+perp)
+\backslash
+equiv
+\backslash
+bm{
+\backslash
+textcolor{red}{p
+\backslash
+lor
+\backslash
+lnot p}}$}] (x) {$
+\backslash
+bullet$};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw[->] (x) -- (y);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+La traduzione di Gödel-McKinsey-Tarski
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+La traduzione di Gödel-McKinsey-Tarski
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+L'idea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Abbiamo fornito una semantica formale ad 
+\series bold
+Int
+\series default
+ utilizzando un frame di Kripke con particolari proprietà, che intuitivamente
+ rispecchiano il possibile aumento di 
+\series bold
+conoscenza
+\series default
+ nel tempo.
+\end_layout
+
+\begin_layout Itemize
+Vorremmo ora formalizzare l'
+\series bold
+interpretazione BHK
+\series default
+ che faceva invece riferimento alla 
+\series bold
+dimostrabilità
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+L'idea è quella di utilizzare l'operatore modale 
+\begin_inset Formula $\boxempty$
+\end_inset
+
+ con il significato di 
+\begin_inset Quotes eld
+\end_inset
+
+è dimostrabile
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Capiamo che per assegnare la corretta semantica all'operator box, necessitiamo
+ di una teoria più forte di 
+\series bold
+K
+\series default
+, in particolare avremo bisogno che la dimostrabiltà di 
+\begin_inset Formula $A$
+\end_inset
+
+ implichi 
+\begin_inset Formula $A$
+\end_inset
+
+ e che la dimostrabilità di 
+\begin_inset Formula $A$
+\end_inset
+
+ implichi la dimostrabilità della sua dimostrabilità, ovvero devono valere
+ gli 
+\series bold
+assiomi
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+T
+\series default
+: 
+\begin_inset Formula $\boxempty A\rightarrow A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+4
+\series default
+: 
+\begin_inset Formula $\boxempty A\rightarrow\boxempty\boxempty A$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Faremo vedere dunque una traduzione di 
+\series bold
+Int
+\series default
+ in 
+\series bold
+S4
+\series default
+, ovvero la logica determinata dai frame 
+\series bold
+riflessivi
+\series default
+ e 
+\series bold
+transitivi
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Una nota sul concetto di dimostrabilità
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+La traduzione
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Diamo quindi una traduzione T: 
+\begin_inset Formula $For\mathcal{L}\rightarrow For\mathcal{ML}$
+\end_inset
+
+ ottenuta dall'interpretazione BHK sostituendo alla parola 
+\begin_inset Quotes eld
+\end_inset
+
+dimostrazione
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+costruzione
+\begin_inset Quotes erd
+\end_inset
+
+ l'operatore 
+\begin_inset Formula $\boxempty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Traduzione GMT
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathsf{T}(p)=\boxempty p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathsf{T}(P\land Q)=\mathsf{T}(P)\land\mathsf{T}(Q)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathsf{T}(P\lor Q)=\mathsf{T}(P)\lor\mathsf{T}(Q)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathsf{T}(P\rightarrow Q)=\boxempty(\mathsf{T}(P)\rightarrow\mathsf{T}(Q))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathsf{T}(\perp)=\boxempty\perp$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Ciò che vogliamo dimostrare è che per ogni formula 
+\begin_inset Formula $P\in For\mathcal{L}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $P\in\mathsf{\mathbf{Int}}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\mathsf{T}(P)\in\mathsf{\mathbf{S4}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lemma preliminare
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Abbiamo bisogno di alcune definizioni e lemmi preliminari.
+\end_layout
+
+\begin_layout Lemma
+Sia 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ un modello costruito su un frame 
+\begin_inset Formula $\mathfrak{F=<W,R>}$
+\end_inset
+
+ transitivo.
+ Allora per ogni mondo 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathfrak{W}$
+\end_inset
+
+ se 
+\begin_inset Formula $(\mathfrak{M},x)\models\boxempty P$
+\end_inset
+
+ allora per ogni 
+\begin_inset Formula $y$
+\end_inset
+
+ tale che 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+ 
+\begin_inset Formula $(\mathfrak{M},y)\models\boxempty P.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Supponiamo per assurdo che in un mondo 
+\begin_inset Formula $y$
+\end_inset
+
+ tale che 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+ 
+\begin_inset Formula $(\mathfrak{M},y)\cancel{\models}\boxempty P$
+\end_inset
+
+.
+ Allora dovrebbe esistere un mondo 
+\begin_inset Formula $z$
+\end_inset
+
+ tale che 
+\begin_inset Formula $y\mathfrak{R}z$
+\end_inset
+
+ in cui 
+\begin_inset Formula $(\mathfrak{M},z)\cancel{\models}P$
+\end_inset
+
+.
+ Per la transitività di 
+\begin_inset Formula $\mathfrak{R}$
+\end_inset
+
+ 
+\begin_inset Formula $x\mathfrak{R}z$
+\end_inset
+
+ e dunque contraddirremmo l'ipotesi.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Frame skeleton
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Il frame quoziente di un frame transitivo 
+\begin_inset Formula $\mathfrak{F=<W,R>}$
+\end_inset
+
+ rispetto alla relazione di cluster 
+\begin_inset Formula $\approx$
+\end_inset
+
+, cioè 
+\begin_inset Formula $<\mathfrak{W}/\approx,\mathfrak{R}/\approx>$
+\end_inset
+
+ essendo:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathfrak{W}/\approx$
+\end_inset
+
+ l'insieme delle classi di equivalenza di 
+\begin_inset Formula $\mathfrak{W}$
+\end_inset
+
+ rispetto a 
+\begin_inset Formula $\approx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C(x)\,\mathfrak{R}/\approx\,C(y)$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+è chiamato frame skeleton di 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ e indicato con 
+\begin_inset Formula $\rho\mathfrak{F}=<\mathfrak{\rho W,\rho R}>$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Risulta evidente che un frame skeleton è 
+\series bold
+antisimmetrico
+\series default
+,
+\series bold
+ transitivo
+\series default
+ e mantiene l'eventuale 
+\series bold
+riflessività
+\series default
+ di R.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Costruzione del modello skeleton
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Torniamo alla logica 
+\series bold
+S4
+\series default
+.
+ Consideriamo un suo modello 
+\begin_inset Formula $\mathfrak{M=<F,V}>$
+\end_inset
+
+.
+ Sappiamo che è costruito su un frame 
+\begin_inset Formula $\mathfrak{F=<W,R>}$
+\end_inset
+
+ transitivo e riflessivo (preordinato).
+\end_layout
+
+\begin_layout Standard
+Costruiamo il frame skeleton 
+\begin_inset Formula $\rho\mathfrak{F}$
+\end_inset
+
+ (che è parzialmente ordinato, essendo transitivo, riflessivo e antisimmetrico)
+ e assegnamogli la valutazione 
+\begin_inset Formula $\rho\mathfrak{V}$
+\end_inset
+
+ così definita:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\rho\mathfrak{V}(p)=\{C(x)\,:\,(\mathfrak{M},x)\models\boxempty p\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Osserviamo che per il lemma precedente la valutazione è trasparente rispetto
+ alla scelta del mondo all'interno del cluster e che inoltre rispetta la
+ proprietà per cui se 
+\begin_inset Formula $C(x)\in\rho\mathfrak{V}(p)$
+\end_inset
+
+ e 
+\begin_inset Formula $C(X)\,\mathfrak{R}/\approx\,C(y)$
+\end_inset
+
+ allora 
+\begin_inset Formula $C(y)\in\rho\mathfrak{V}(p)$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $p\in Var\mathcal{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Chiamiamo skeleton di 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ il modello 
+\begin_inset Formula $\rho\mathfrak{M=<\rho F,\rho V}>$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\rho\mathfrak{M}$
+\end_inset
+
+ è un modello intuizionista.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modello modale e lemma skeleton
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Osserviamo che dato un modello intuizionista 
+\begin_inset Formula $\mathfrak{N}\mathfrak{=<\rho F,U}>$
+\end_inset
+
+ costruito come skeleton di un frame modale 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ possiamo costruire un modello modale 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ considerando la valutazione 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\mathfrak{V}(p)=\{x\,:\,(\rho\mathfrak{N},C(x))\models p\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In particolare avremo 
+\begin_inset Formula $\rho\mathfrak{M}$
+\end_inset
+
+ isomorfo a 
+\begin_inset Formula $\mathfrak{N}$
+\end_inset
+
+.
+ Inoltre se ogni cluster di 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ è singolo abbiamo che 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ è isomorfo a 
+\begin_inset Formula $\rho\mathfrak{F}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ è isomorfo ad 
+\begin_inset Formula $\mathfrak{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+skeleton
+\end_layout
+
+\end_inset
+
+Per ogni modello 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ modale costruito su un frame preordinato, per ogni mondo 
+\begin_inset Formula $x$
+\end_inset
+
+ di 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ e per ogni formula 
+\begin_inset Formula $P\in For\mathcal{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $(\rho\mathfrak{M},C(x))\models P$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $(\mathfrak{M},x)\models\mathsf{T}(P)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lemma skeleton - dimostrazione
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+La dimostrazione procede per induzione sulla complessità della formula.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+\shape italic
+Caso base (formula atomica)
+\series default
+\shape default
+: per la definizione di 
+\begin_inset Formula $\rho\mathfrak{V}$
+\end_inset
+
+, 
+\begin_inset Formula $(\rho\mathfrak{M},C(x))\models p$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $(\mathfrak{M},x)\models\boxempty p$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{T}(p)=\boxempty p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Supponiamo allora che per una formula con 
+\begin_inset Formula $n$
+\end_inset
+
+ connettivi 
+\begin_inset Formula $Q$
+\end_inset
+
+ valga 
+\begin_inset Formula $(\rho\mathfrak{M},C(x))\models Q$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $(\mathfrak{M},x)\models\mathsf{T}(Q)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Dimostriamo che la proprietà vale aggiungendo l'
+\begin_inset Formula $n+1esimo$
+\end_inset
+
+ connettivo.
+ Distinguiamo i seguenti casi.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+\shape italic
+Caso 
+\begin_inset Formula $P=Q\rightarrow R$
+\end_inset
+
+: 
+\series default
+\shape default
+
+\begin_inset Formula $(\rho\mathfrak{M},C(x))\cancel{\models}P$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $(\rho\mathfrak{M},C(y))\models Q$
+\end_inset
+
+ e 
+\begin_inset Formula $(\rho\mathfrak{M},C(y))\cancel{\models}R$
+\end_inset
+
+ in un qualche 
+\begin_inset Formula $C(y)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $C(X)\,\mathfrak{R}/\approx\,C(y)$
+\end_inset
+
+.
+ È possibile per ipotesi di induzione se e solo se 
+\begin_inset Formula $(\mathfrak{M},y)\models\mathsf{T}(Q)$
+\end_inset
+
+ e 
+\begin_inset Formula $(\mathfrak{M},y)\cancel{\models}\mathsf{T}(R)$
+\end_inset
+
+ con 
+\begin_inset Formula $y\in C(y)$
+\end_inset
+
+ cioè se e solo se 
+\begin_inset Formula $(\mathfrak{M},x)\cancel{\models}\mathsf{\boxempty(T}(Q)\rightarrow\mathsf{T}(R))$
+\end_inset
+
+ cioè 
+\begin_inset Formula $(\mathfrak{M},x)\cancel{\models}\mathsf{T}(P)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Gli altri casi con 
+\begin_inset Formula $\land$
+\end_inset
+
+ e 
+\begin_inset Formula $\lor$
+\end_inset
+
+ si provano allo stesso modo.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+T è una traduzione di 
+\series bold
+Int
+\series default
+ in 
+\series bold
+S4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Corollary
+Per ogni frame F quasi ordinato e ogni 
+\begin_inset Formula $P\in For\mathcal{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula $\rho\mathfrak{F}\models P$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\mathfrak{F}\models\mathsf{T}(P)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $P\in\mathbf{Int}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\mathsf{T}(P)\in\mathbf{S4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $(\Longrightarrow)$
+\end_inset
+
+ Supponiamo che 
+\begin_inset Formula $\mathsf{T}(P)\notin\mathbf{S4}$
+\end_inset
+
+.
+ Allora esiste un frame 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ transitivo e riflessivo per cui 
+\begin_inset Formula $\mathfrak{F}\cancel{\models}\mathsf{T}(P)$
+\end_inset
+
+.
+ Per il corollario sopra allora 
+\begin_inset Formula $\rho\mathfrak{F}\cancel{\models}P$
+\end_inset
+
+.
+ Dunque 
+\begin_inset Formula $P\notin\mathbf{Int}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $(\Longleftarrow)$
+\end_inset
+
+ Supponiamo che 
+\begin_inset Formula $P\notin\mathbf{Int}$
+\end_inset
+
+.
+ Allora esiste un frame intuizionista 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ per cui 
+\begin_inset Formula $\mathfrak{F}\cancel{\models}P$
+\end_inset
+
+.
+ Possiamo allora considerare 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ come un frame modale isomorfo al suo skeleton, per cui per il corollario
+ sopra 
+\begin_inset Formula $\mathfrak{F}\cancel{\models}\mathsf{T}(P)$
+\end_inset
+
+ e quindi 
+\begin_inset Formula $\mathsf{T}(P)\notin\mathbf{S4}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Riferimenti bibliografici
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "Usati"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
