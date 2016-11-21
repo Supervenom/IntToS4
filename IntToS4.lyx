@@ -1154,6 +1154,123 @@ Una nota sul concetto di dimostrabilità
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+La 
+\series bold
+semantica
+\series default
+ che diamo all'operatore 
+\begin_inset Formula $\boxempty$
+\end_inset
+
+ è quella di 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+dimostrabilità
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ in un senso 
+\series bold
+informale
+\series default
+, non in un particolare sistema formale 
+\series bold
+S
+\series default
+ come potrebbe essere 
+\series bold
+PA
+\series default
+.
+ Infatti avremmo che in 
+\series bold
+S
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\boxempty(0\neq0)\rightarrow0\neq0$
+\end_inset
+
+ (assioma 
+\series bold
+T
+\series default
+ e sostituzione)
+\end_layout
+
+\begin_layout Standard
+\align left
+da cui deriviamo 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\lnot\boxempty(0\neq0)$
+\end_inset
+
+ (essendo il conseguente falso),
+\end_layout
+
+\begin_layout Standard
+che asserisce la 
+\series bold
+coerenza
+\series default
+ di 
+\series bold
+S
+\series default
+, andando contro il 
+\series bold
+secondo teorema di incompletezza
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Per considerare la dimostrabilità in un sistema formale dobbiamo considerare
+ non 
+\series bold
+S4
+\series default
+, ma la logica 
+\series bold
+GL
+\series default
+ in cui l'operatore 
+\begin_inset Formula $\boxempty$
+\end_inset
+
+ ha le stesse proprità del predicato 
+\begin_inset Quotes eld
+\end_inset
+
+è dimostrabile in 
+\series bold
+S
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ definito nella dimostrazione dei 
+\series bold
+teoremi di incompletezza
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 
 \end_layout
