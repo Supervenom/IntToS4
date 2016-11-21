@@ -532,7 +532,11 @@ Int
 \end_layout
 
 \begin_layout Standard
-e la regola di inferenza Modus Ponens.
+e la regola di inferenza 
+\series bold
+Modus Ponens
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -594,7 +598,7 @@ Dobbiamo immaginare che se una proposizione
 
 .
  La conoscenza evolve cioè da uno stato all'altro.
- Tuttavia ciò che è vero ovviamente nel futuro rimane vero.
+ Tuttavia ciò che è vero, ovviamente nel futuro rimane vero.
 \end_layout
 
 \begin_layout Itemize
@@ -610,12 +614,19 @@ Possiamo quindi formalizzare il ragionamento costruendo un
 \begin_inset Formula $\mathfrak{W}$
 \end_inset
 
- insieme non vuoto dei mondi e 
+ insieme non vuoto dei 
+\series bold
+mondi
+\series default
+ e 
 \begin_inset Formula $\mathfrak{R\subseteq W\times W}$
 \end_inset
 
- relazione di accessiblità fra i mondi, su cui verranno costruiti i relativi
  
+\series bold
+relazione di accessiblità
+\series default
+ fra i mondi, su cui verranno costruiti i relativi 
 \series bold
 modelli 
 \begin_inset Formula $\mathfrak{M=<F,V>}$
@@ -623,7 +634,11 @@ modelli
 
 
 \series default
- assegnando una funzione di valutazione 
+ assegnando una funzione di 
+\series bold
+valutazione
+\series default
+ 
 \begin_inset Formula $\mathfrak{V}:Var\mathcal{L}\rightarrow\mathcal{P}(\mathfrak{W})$
 \end_inset
 
@@ -644,7 +659,11 @@ tempo
 \begin_inset Formula $\mathfrak{R}$
 \end_inset
 
- sia un ordine parziale, ovvero sia 
+ sia un 
+\series bold
+ordine parziale
+\series default
+, ovvero sia 
 \series bold
 transitiva
 \series default
@@ -664,7 +683,15 @@ Richiediamo inoltre che la funzione di valutazione
 \begin_inset Formula $\mathfrak{V}$
 \end_inset
 
- garantisca che la verità venga mantenuta nel tempo, ovvero che se 
+ garantisca che la verità venga mantenuta 
+\begin_inset Quotes eld
+\end_inset
+
+nel tempo
+\begin_inset Quotes erd
+\end_inset
+
+, ovvero che se 
 \begin_inset Formula $x\in\mathfrak{V}(p)$
 \end_inset
 
@@ -711,11 +738,23 @@ Int
 
 \begin_deeper
 \begin_layout Standard
-La valutazione delle formule su un mondo 
+La 
+\series bold
+valutazione
+\series default
+ delle formule su un 
+\series bold
+mondo
+\series default
+ 
 \begin_inset Formula $x$
 \end_inset
 
- di un modello 
+ di un 
+\series bold
+modello
+\series default
+ 
 \series bold
 
 \begin_inset Formula $\mathfrak{M=<F,V>}$
@@ -723,13 +762,22 @@ La valutazione delle formule su un mondo
 
 
 \series default
- costruito su un frame 
+ costruito su un 
+\series bold
+frame
+\series default
+ 
 \begin_inset Formula $\mathfrak{F=<W,R>}$
 \end_inset
 
- procede dunque per induzione sulla costruzione della formula:
+ procede per induzione sulla costruzione della formula:
 \end_layout
 
+\begin_layout Block
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $(\mathfrak{M},x)\models p$
 \end_inset
@@ -821,9 +869,9 @@ segue quindi che
 .
 \end_layout
 
+\end_deeper
 \begin_layout Standard
-Si verifica facilmente per induzione sulla complessità della formula che
- con questa costruzione se 
+Si verifica per induzione sulla complessità della formula che se 
 \begin_inset Formula $P$
 \end_inset
 
@@ -839,7 +887,11 @@ Si verifica facilmente per induzione sulla complessità della formula che
 \begin_inset Formula $P$
 \end_inset
 
- è vera anche in y.
+ è vera anche in 
+\begin_inset Formula $y$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -1021,12 +1073,20 @@ L'idea
 
 \begin_deeper
 \begin_layout Itemize
-Abbiamo fornito una semantica formale ad 
+Abbiamo fornito una 
+\series bold
+semantica formale
+\series default
+ ad 
 \series bold
 Int
 \series default
- utilizzando un frame di Kripke con particolari proprietà, che intuitivamente
- rispecchiano il possibile aumento di 
+ utilizzando un 
+\series bold
+frame di Kripke
+\series default
+ con particolari proprietà, che intuitivamente rispecchiano il possibile
+ aumento di 
 \series bold
 conoscenza
 \series default
@@ -1046,7 +1106,11 @@ dimostrabilità
 \end_layout
 
 \begin_layout Itemize
-L'idea è quella di utilizzare l'operatore modale 
+L'idea è quella di utilizzare l'operatore 
+\series bold
+modale
+\series default
+ 
 \begin_inset Formula $\boxempty$
 \end_inset
 
@@ -1062,8 +1126,11 @@ L'idea è quella di utilizzare l'operatore modale
 \end_layout
 
 \begin_layout Itemize
-Capiamo che per assegnare la corretta semantica all'operator box, necessitiamo
- di una teoria più forte di 
+Capiamo che per assegnare la corretta semantica all'operatore 
+\begin_inset Formula $\boxempty$
+\end_inset
+
+, necessitiamo di una teoria più forte di 
 \series bold
 K
 \series default
@@ -1180,7 +1247,11 @@ dimostrabilità
 \series bold
 informale
 \series default
-, non in un particolare sistema formale 
+, non in un particolare 
+\series bold
+sistema formale
+\series default
+ 
 \series bold
 S
 \series default
@@ -1238,8 +1309,15 @@ secondo teorema di incompletezza
 \end_layout
 
 \begin_layout Standard
-Per considerare la dimostrabilità in un sistema formale dobbiamo considerare
- non 
+Per considerare la dimostrabilità in un 
+\series bold
+sistema formale
+\series default
+ 
+\series bold
+S
+\series default
+ dobbiamo considerare non 
 \series bold
 S4
 \series default
@@ -1297,11 +1375,19 @@ La traduzione
 
 \begin_deeper
 \begin_layout Standard
-Diamo quindi una traduzione T: 
+Diamo quindi una 
+\series bold
+traduzione
+\series default
+ T: 
 \begin_inset Formula $For\mathcal{L}\rightarrow For\mathcal{ML}$
 \end_inset
 
- ottenuta dall'interpretazione BHK sostituendo alla parola 
+ ottenuta dall'
+\series bold
+interpretazione BHK
+\series default
+ sostituendo alla parola 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1522,6 +1608,54 @@ Frame skeleton
 
 \begin_deeper
 \begin_layout Definition
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+relazione di cluster
+\end_layout
+
+\end_inset
+
+Dato un frame 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ transitivo 
+\begin_inset Formula $<\mathfrak{W,R}>$
+\end_inset
+
+ diciamo che per ogni 
+\begin_inset Formula $x,y\in\mathfrak{W}$
+\end_inset
+
+ 
+\begin_inset Formula $x\approx y$
+\end_inset
+
+ se e solo se o 
+\begin_inset Formula $x=y$
+\end_inset
+
+ o 
+\begin_inset Formula $x\mathfrak{R}y$
+\end_inset
+
+ e 
+\begin_inset Formula $y\mathfrak{R}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
 Il frame quoziente di un frame transitivo 
 \begin_inset Formula $\mathfrak{F=<W,R>}$
 \end_inset
@@ -1621,25 +1755,64 @@ Torniamo alla logica
 S4
 \series default
 .
- Consideriamo un suo modello 
+ Consideriamo un suo 
+\series bold
+modello
+\series default
+ 
 \begin_inset Formula $\mathfrak{M=<F,V}>$
 \end_inset
 
 .
- Sappiamo che è costruito su un frame 
+ Sappiamo che è costruito su un 
+\series bold
+frame
+\series default
+ 
 \begin_inset Formula $\mathfrak{F=<W,R>}$
 \end_inset
 
- transitivo e riflessivo (preordinato).
+ 
+\series bold
+transitivo e riflessivo
+\series default
+ (
+\series bold
+preordinato
+\series default
+).
 \end_layout
 
 \begin_layout Standard
-Costruiamo il frame skeleton 
+Costruiamo il 
+\series bold
+frame skeleton
+\series default
+ 
 \begin_inset Formula $\rho\mathfrak{F}$
 \end_inset
 
- (che è parzialmente ordinato, essendo transitivo, riflessivo e antisimmetrico)
- e assegnamogli la valutazione 
+ (che è 
+\series bold
+parzialmente ordinato
+\series default
+, essendo 
+\series bold
+transitivo
+\series default
+, 
+\series bold
+riflessivo
+\series default
+ e 
+\series bold
+antisimmetrico
+\series default
+) e assegnamogli la 
+\series bold
+valutazione
+\series default
+ 
 \begin_inset Formula $\rho\mathfrak{V}$
 \end_inset
 
@@ -1677,20 +1850,35 @@ Osserviamo che per il lemma precedente la valutazione è trasparente rispetto
 \end_layout
 
 \begin_layout Standard
-Chiamiamo skeleton di 
+Chiamiamo 
+\series bold
+skeleton
+\series default
+ di 
 \begin_inset Formula $\mathfrak{M}$
 \end_inset
 
- il modello 
+ il 
+\series bold
+modello
+\series default
+ 
 \begin_inset Formula $\rho\mathfrak{M=<\rho F,\rho V}>$
 \end_inset
 
 .
  
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\rho\mathfrak{M}$
 \end_inset
 
- è un modello intuizionista.
+ è dunque un 
+\series bold
+modello intuizionista
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -1716,19 +1904,35 @@ Modello modale e lemma skeleton
 
 \begin_deeper
 \begin_layout Standard
-Osserviamo che dato un modello intuizionista 
+Osserviamo che dato un 
+\series bold
+modello intuizionista
+\series default
+ 
 \begin_inset Formula $\mathfrak{N}\mathfrak{=<\rho F,U}>$
 \end_inset
 
- costruito come skeleton di un frame modale 
+ costruito come skeleton di un 
+\series bold
+frame modale
+\series default
+ 
 \begin_inset Formula $\mathfrak{F}$
 \end_inset
 
- possiamo costruire un modello modale 
+ possiamo costruire un 
+\series bold
+modello modale
+\series default
+ 
 \begin_inset Formula $\mathfrak{M}$
 \end_inset
 
- considerando la valutazione 
+ considerando la 
+\series bold
+valutazione
+\series default
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1750,7 +1954,11 @@ In particolare avremo
 \end_inset
 
 .
- Inoltre se ogni cluster di 
+ Inoltre se ogni 
+\series bold
+cluster
+\series default
+ di 
 \begin_inset Formula $\mathfrak{F}$
 \end_inset
 
@@ -1950,7 +2158,11 @@ Caso
 \end_layout
 
 \begin_layout Proof
-Gli altri casi con 
+Gli altri 
+\series bold
+casi
+\series default
+ con 
 \begin_inset Formula $\land$
 \end_inset
 
@@ -1990,7 +2202,11 @@ S4
 
 \begin_deeper
 \begin_layout Corollary
-Per ogni frame F quasi ordinato e ogni 
+Per ogni frame 
+\begin_inset Formula $\mathfrak{F}$
+\end_inset
+
+ quasi ordinato e ogni 
 \begin_inset Formula $P\in For\mathcal{L}$
 \end_inset
 
