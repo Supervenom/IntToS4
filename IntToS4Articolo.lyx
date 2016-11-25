@@ -10,11 +10,19 @@
 \usepackage{tikz}
 \usepackage{bm}
 \usetikzlibrary{automata,positioning,arrows.meta}
+\usepackage{ae,aecompl}
+\usepackage[italian]{babel}
+\uselanguage{italian}
+\languagepath{italian}
+\deftranslation[to=italian]{Definition}{Definizione}
+\deftranslation[to=italian]{Example}{Esempio}
+\deftranslation[to=italian]{Theorem}{Teorema}
+\deftranslation[to=italian]{Corollary}{Corollario}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
 \language italian
-\language_package babel
+\language_package none
 \inputencoding utf8
 \fontencoding global
 \font_roman "lmodern" "default"
@@ -84,7 +92,7 @@
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "lavoroLogica2.lyx"
+filename "IntToS4.lyx"
 
 \end_inset
 

@@ -149,7 +149,16 @@ PoliMi
 \end_layout
 
 \begin_layout Date
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout Plain Layout
 15 Dicembre 2016
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -157,6 +166,19 @@ PoliMi
 status open
 
 \begin_layout Plain Layout
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
 Sommario
 \end_layout
 
@@ -165,7 +187,43 @@ Sommario
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+Abstract
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Dopo aver brevemente presentato le motivazioni filosofiche e matematiche
+ per cui ha senso introdurre la logica intuizionista se ne discute brevemente
+ l'interpretazione BHK e si fornisce la semantica di Kripke.
+ Si passa poi a presentare la traduzione di Gödel-McKinsey-Tarski che permette
+ l'interpretazione dell'intuizionismo attraverso i connettivi modali classici,
+ e in particolare si dimostra l'equivalenza con il sistema 
+\series bold
+S4
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
@@ -181,6 +239,15 @@ La logica intuizionista
 \end_layout
 
 \begin_layout PlainFrame
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -724,11 +791,29 @@ nel tempo
 status open
 
 \begin_layout Plain Layout
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
 La semantica di Kripke per 
 \series bold
 Int 
 \series default
 (continua)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -916,7 +1001,7 @@ Esempio: il principio del terzo escluso
 \end_layout
 
 \begin_deeper
-\begin_layout Example
+\begin_layout ExampleBlock
 Ci basta trovare un modello in cui 
 \begin_inset Formula $p\lor\lnot p\equiv p\lor(p\rightarrow\perp)$
 \end_inset
@@ -947,14 +1032,14 @@ Ci basta trovare un modello in cui
  che non lo è (non è detto che sia falso!).
 \end_layout
 
-\begin_layout Example
+\begin_layout ExampleBlock
 \begin_inset VSpace bigskip
 \end_inset
 
 
 \end_layout
 
-\begin_layout Example
+\begin_layout ExampleBlock
 \begin_inset ERT
 status open
 
@@ -1045,6 +1130,15 @@ La traduzione di Gödel-McKinsey-Tarski
 \end_layout
 
 \begin_layout PlainFrame
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1497,7 +1591,25 @@ Ciò che vogliamo dimostrare è che per ogni formula
 status open
 
 \begin_layout Plain Layout
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
 Lemma preliminare
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2034,7 +2146,25 @@ Per ogni modello
 status open
 
 \begin_layout Plain Layout
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
 Lemma skeleton - dimostrazione
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2316,7 +2446,25 @@ Per ogni frame
 status open
 
 \begin_layout Plain Layout
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
 Riferimenti bibliografici
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
