@@ -266,7 +266,279 @@ La logica intuizionista
 status open
 
 \begin_layout Plain Layout
-Le motivazioni
+Esempi introduttivi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Consideriamo questi tre 
+\series bold
+teoremi
+\series default
+, provenienti da aree diverse della 
+\series bold
+matematica
+\series default
+: 
+\series bold
+logica
+\series default
+, 
+\series bold
+algebra lineare
+\series default
+ e 
+\series bold
+topologia
+\series default
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+di completezza di Gödel
+\end_layout
+
+\end_inset
+
+La logica classica predicativa è completa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+di esistenza della base
+\end_layout
+
+\end_inset
+
+Ogni spazio vettoriale ha una base.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+del punto fisso di Brouwer
+\end_layout
+
+\end_inset
+
+Ogni funzione continua da un sottoinsieme convesso e compatto di uno spazio
+ euclideo in sé ha almeno un punto fisso.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+L'assioma della scelta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Per dimostrare i primi due 
+\series bold
+teoremi
+\series default
+ viene utilizzato il 
+\series bold
+lemma di Zorn
+\series default
+.
+ Si può dimostrare che esso è equivalente all'
+\series bold
+assioma della scelta AC
+\series default
+.
+\end_layout
+
+\begin_layout Definition
+Una funzione di scelta su una famiglia di insiemi 
+\begin_inset Formula $x$
+\end_inset
+
+ è una funzione 
+\begin_inset Formula $f:\,x\rightarrow{\displaystyle \cup}x$
+\end_inset
+
+ tale che per ogni 
+\begin_inset Formula $y\in x$
+\end_inset
+
+, 
+\begin_inset Formula $f(y)\in y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Assioma della scelta
+\end_layout
+
+\end_inset
+
+Su ogni famiglia di insiemi non vuota esiste una funzione di scelta.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+AC
+\series default
+ ci garantisce l'esistenza della funzione di scelta, ma nessun modo per
+ calcolarla.
+ Perciò quando lo utilizziamo all'interno di altre dimostrazioni queste
+ perdono qualsiasi contenuto costruttivo, non riusciamo per esempio ad esibire
+ dei 
+\series bold
+testimoni
+\series default
+ (witness) nei risultati di 
+\series bold
+esistenza
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Le dimostrazioni per assurdo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Per dimostrare il teorema di Brouwer si ricorre alla tecnica di 
+\series bold
+dimostrazione per assurdo
+\series default
+.
+ Anche questa maniera di procedere non fornisce dimostrazioni costruttive.
+ 
+\end_layout
+
+\begin_layout Standard
+In formule possiamo scrivere la 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+reductio ad absurdum
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ in questa maniera:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $(\lnot A\rightarrow\perp)\rightarrow A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+o in altri termini considerando che 
+\begin_inset Formula $(P\rightarrow\perp)\longleftrightarrow\lnot P$
+\end_inset
+
+ è una tautologia:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\lnot\lnot A\rightarrow A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Anche la legge della 
+\series bold
+doppia negazione
+\series default
+ porta quindi a dimostrazioni non costruttive.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+L'intuizionismo e la legge del terzo escluso
 \end_layout
 
 \end_inset
@@ -301,7 +573,11 @@ algoritmo
 \end_layout
 
 \begin_layout Standard
-Brouwer capisce che questa mancanza è data dalla legge del 
+
+\series bold
+Brouwer
+\series default
+ capisce che questa mancanza è data dalla legge del 
 \series bold
 terzo escluso
 \series default
@@ -311,12 +587,36 @@ terzo escluso
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\vdash p\lor\lnot p
+\vdash P\lor\lnot P
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+che è equivalente alla legge della 
+\series bold
+doppia negazione
+\series default
+ ed è implicata dall'
+\series bold
+assioma della scelta
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Nasce allora la 
+\series bold
+logica intuizionista
+\series default
+, che lo 
+\series bold
+rifiuta
+\series default
+.
 \end_layout
 
 \begin_layout ExampleBlock
@@ -360,7 +660,11 @@ La corrispondenza di Curry-Howard-Lambek (cenni)
 \begin_deeper
 \begin_layout Itemize
 La logica intuizionista diventa fondamentale nel secondo dopoguerra nella
- teoria dei 
+ 
+\series bold
+teoria della dimostrazione
+\series default
+ e dei 
 \series bold
 linguaggi di programmazione
 \series default
@@ -374,7 +678,7 @@ corrispondenza sintattica
 \series default
  tra le dimostrazioni in 
 \series bold
-deduzione naturale
+deduzione naturale intuizionista
 \series default
  e i programmi del 
 \series bold
@@ -393,7 +697,7 @@ teoria dei tipi
 \series bold
 linguaggi funzionali
 \series default
- (Lisp, Haskell) e dei 
+ (Haskell) e dei 
 \series bold
 proof-assistant
 \series default
@@ -432,6 +736,10 @@ L'interpretazione BHK
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Diamo un'interpretazione delle costanti logiche intuizioniste.
+\end_layout
+
 \begin_layout Itemize
 Una dimostrazione di 
 \begin_inset Formula $A\wedge B$
@@ -1101,6 +1409,146 @@ textcolor{red}{p
 lor
 \backslash
 lnot p}}$}] (x) {$
+\backslash
+bullet$};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+draw[->] (x) -- (y);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Esempio: la legge della doppia negazione
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ExampleBlock
+Possiamo utilizzare lo stesso modello dell'esempio precedente.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[node distance=20mm, auto, scale=1, transform shape]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node[label=above:$y$,label=left:{$p,
+\backslash
+lnot p
+\backslash
+rightarrow
+\backslash
+perp
+\backslash
+equiv
+\backslash
+lnot
+\backslash
+lnot p,
+\backslash
+lnot
+\backslash
+lnot p
+\backslash
+rightarrow p$},label=right:{$p
+\backslash
+rightarrow
+\backslash
+perp
+\backslash
+equiv
+\backslash
+lnot p$}] (y) at (0,0) {$
+\backslash
+bullet$};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node[below of=y,label=below:$x$,label=left:{$
+\backslash
+lnot p
+\backslash
+rightarrow
+\backslash
+perp
+\backslash
+equiv
+\backslash
+lnot
+\backslash
+lnot p$},label=right:{$p,p
+\backslash
+rightarrow
+\backslash
+perp,
+\backslash
+bm{
+\backslash
+textcolor{red}{
+\backslash
+lnot
+\backslash
+lnot p
+\backslash
+rightarrow p}}$}] (x) {$
 \backslash
 bullet$};
 \end_layout
