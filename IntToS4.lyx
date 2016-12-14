@@ -202,11 +202,23 @@ status open
 \align center
 
 \series bold
-Abstract
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{Abstract}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-\align center
+\align left
 Dopo aver brevemente presentato le motivazioni filosofiche e matematiche
  per cui ha senso introdurre la logica intuizionista se ne discute brevemente
  l'interpretazione BHK e si fornisce la semantica di Kripke.
@@ -234,6 +246,32 @@ LatexCommand tableofcontents
 \end_layout
 
 \end_deeper
+\begin_layout Frame
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+article
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 La logica intuizionista
 \end_layout
@@ -297,6 +335,19 @@ algebra lineare
 topologia
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
@@ -310,6 +361,22 @@ di completezza di Gödel
 \end_inset
 
 La logica classica predicativa è completa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -330,6 +397,22 @@ di esistenza della base
 \end_inset
 
 Ogni spazio vettoriale ha una base.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -392,6 +475,22 @@ assioma della scelta AC
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Definition
 Una funzione di scelta su una famiglia di insiemi 
 \begin_inset Formula $x$
@@ -412,6 +511,22 @@ Una funzione di scelta su una famiglia di insiemi
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Block
 \begin_inset Argument 2
 status open
@@ -423,6 +538,22 @@ Assioma della scelta
 \end_inset
 
 Su ogni famiglia di insiemi non vuota esiste una funzione di scelta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -479,6 +610,22 @@ dimostrazione per assurdo
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 In formule possiamo scrivere la 
 \begin_inset Quotes eld
 \end_inset
@@ -503,6 +650,22 @@ reductio ad absurdum
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 o in altri termini considerando che 
 \begin_inset Formula $(P\rightarrow\perp)\longleftrightarrow\lnot P$
 \end_inset
@@ -516,6 +679,22 @@ o in altri termini considerando che
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -558,7 +737,19 @@ dimostrazioni
 computazionale
 \series default
 .
- 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -588,7 +779,7 @@ terzo escluso
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\vdash P\lor\lnot P
+\vdash P\lor\lnot P\equiv\lnot\lnot\lnot P\lor P\equiv\lnot\lnot P\rightarrow P
 \]
 
 \end_inset
@@ -606,6 +797,19 @@ doppia negazione
 assioma della scelta
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -618,6 +822,22 @@ logica intuizionista
 rifiuta
 \series default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout ExampleBlock
@@ -670,6 +890,19 @@ teoria della dimostrazione
 linguaggi di programmazione
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -686,7 +919,19 @@ deduzione naturale intuizionista
 lambda-calcolo tipato semplice
 \series default
 .
- 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -694,7 +939,7 @@ La corrispondenza tra prove e programmi segna la nascita della moderna
 \series bold
 teoria dei tipi
 \series default
- (Martin-Lof, Coquand), dei 
+ (Martin-Lof, Coquand, Huet), dei 
 \series bold
 linguaggi funzionali
 \series default
@@ -702,8 +947,20 @@ linguaggi funzionali
 \series bold
 proof-assistant
 \series default
- (Coq, HOL).
- 
+ (Coq, HOL, Matita).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -739,6 +996,22 @@ L'interpretazione BHK
 \begin_deeper
 \begin_layout Standard
 Diamo un'interpretazione delle costanti logiche intuizioniste.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -805,6 +1078,22 @@ Una dimostrazione di
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -916,6 +1205,22 @@ Modus Ponens
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La logica 
 \series bold
 Int
@@ -975,6 +1280,19 @@ Dobbiamo immaginare che se una proposizione
 .
  La conoscenza evolve cioè da uno stato all'altro.
  Tuttavia ciò che è vero, ovviamente nel futuro rimane vero.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -982,7 +1300,7 @@ Possiamo quindi formalizzare il ragionamento costruendo un
 \series bold
  frame
 \series default
- di Kripke 
+ di Kripke intuizionista 
 \begin_inset Formula $\mathfrak{F=<W,R>}$
 \end_inset
 
@@ -1019,11 +1337,27 @@ valutazione
 \end_inset
 
 .
- 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Per dare il significato ad R di 
+Per dare il significato ad 
+\begin_inset Formula $\mathfrak{R}$
+\end_inset
+
+ di 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1052,6 +1386,19 @@ riflessiva
 antisimmetrica
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1261,6 +1608,19 @@ segue quindi che
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1574,6 +1934,32 @@ end{tikzpicture}
 \end_layout
 
 \end_deeper
+\begin_layout Frame
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+article
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 La traduzione di Gödel-McKinsey-Tarski
 \end_layout
@@ -1634,6 +2020,19 @@ frame di Kripke
 conoscenza
 \series default
  nel tempo.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1646,6 +2045,19 @@ interpretazione BHK
 dimostrabilità
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1666,6 +2078,19 @@ modale
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1717,6 +2142,19 @@ T
 \series default
 : 
 \begin_inset Formula $\boxempty A\rightarrow\boxempty\boxempty A$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1803,6 +2241,19 @@ S
 PA
 \series default
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
  Infatti avremmo che in 
 \series bold
 S
@@ -1820,6 +2271,19 @@ S
 T
 \series default
  e sostituzione)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1849,6 +2313,19 @@ S
 secondo teorema di incompletezza
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1922,8 +2399,8 @@ Diamo quindi una
 \series bold
 traduzione
 \series default
- T: 
-\begin_inset Formula $For\mathcal{L}\rightarrow For\mathcal{ML}$
+ 
+\begin_inset Formula $\mathsf{T}:\,For\mathcal{L}\rightarrow For\mathcal{ML}$
 \end_inset
 
  ottenuta dall'
@@ -1951,6 +2428,19 @@ costruzione
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Block
@@ -1997,6 +2487,19 @@ Traduzione GMT
 
 \begin_layout Itemize
 \begin_inset Formula $\mathsf{T}(\perp)=\boxempty\perp$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -2069,6 +2572,19 @@ Lemma preliminare
 \begin_deeper
 \begin_layout Standard
 Abbiamo bisogno di alcune definizioni e lemmi preliminari.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Lemma
@@ -2103,6 +2619,19 @@ Sia
 
  
 \begin_inset Formula $(\mathfrak{M},y)\models\boxempty P.$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -2207,6 +2736,60 @@ Dato un frame
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Chiamiamo cluster un elemento di 
+\begin_inset Formula $\mathfrak{W}/\approx$
+\end_inset
+
+ ovvero le classi di equivalenza di 
+\begin_inset Formula $\mathfrak{W}$
+\end_inset
+
+ rispetto a 
+\begin_inset Formula $\approx$
+\end_inset
+
+.
+ In particolare denotiamo con 
+\begin_inset Formula $C(x)$
+\end_inset
+
+ il cluster contenente 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2269,11 +2852,24 @@ Il frame quoziente di un frame transitivo
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-Risulta evidente che un frame skeleton è 
+Il frame skeleton è 
 \series bold
 antisimmetrico
 \series default
@@ -2285,7 +2881,11 @@ antisimmetrico
 \series bold
 riflessività
 \series default
- di R.
+ di 
+\begin_inset Formula $\mathfrak{R}$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -2316,7 +2916,23 @@ Torniamo alla logica
 S4
 \series default
 .
- Consideriamo un suo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consideriamo un suo 
 \series bold
 modello
 \series default
@@ -2342,6 +2958,19 @@ transitivo e riflessivo
 preordinato
 \series default
 ).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2386,6 +3015,19 @@ valutazione
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2408,6 +3050,19 @@ Osserviamo che per il lemma precedente la valutazione è trasparente rispetto
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2486,7 +3141,7 @@ frame modale
 modello modale
 \series default
  
-\begin_inset Formula $\mathfrak{M}$
+\begin_inset Formula $\mathfrak{M\mathfrak{=<F,V}>}$
 \end_inset
 
  considerando la 
@@ -2498,11 +3153,23 @@ valutazione
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $\mathfrak{V}(p)=\{x\,:\,(\rho\mathfrak{N},C(x))\models p\}$
+\begin_inset Formula $\mathfrak{V}(p)=\{x\,:\,(\mathfrak{N},C(x))\models p\}$
 \end_inset
 
 .
- 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2515,6 +3182,19 @@ In particolare avremo
 \end_inset
 
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
  Inoltre se ogni 
 \series bold
 cluster
@@ -2540,6 +3220,19 @@ cluster
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Lemma
@@ -2624,6 +3317,19 @@ Lemma skeleton - dimostrazione
 \begin_deeper
 \begin_layout Proof
 La dimostrazione procede per induzione sulla complessità della formula.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -2650,6 +3356,19 @@ Caso base (formula atomica)
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -2658,18 +3377,31 @@ Supponiamo allora che per una formula con
 \end_inset
 
  connettivi 
-\begin_inset Formula $Q$
+\begin_inset Formula $A$
 \end_inset
 
  valga 
-\begin_inset Formula $(\rho\mathfrak{M},C(x))\models Q$
+\begin_inset Formula $(\rho\mathfrak{M},C(x))\models A$
 \end_inset
 
  se e solo se 
-\begin_inset Formula $(\mathfrak{M},x)\models\mathsf{T}(Q)$
+\begin_inset Formula $(\mathfrak{M},x)\models\mathsf{T}(A)$
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -2679,6 +3411,19 @@ Dimostriamo che la proprietà vale aggiungendo l'
 
  connettivo.
  Distinguiamo i seguenti casi.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -2689,7 +3434,19 @@ Caso
 \begin_inset Formula $P=Q\rightarrow R$
 \end_inset
 
-: 
+ 
+\series default
+(
+\begin_inset Formula $Q$
+\end_inset
+
+ e 
+\begin_inset Formula $R$
+\end_inset
+
+ hanno al più n connettivi):
+\series bold
+ 
 \series default
 \shape default
 
@@ -2713,7 +3470,20 @@ Caso
 \end_inset
 
 .
- È possibile per ipotesi di induzione se e solo se 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+È possibile per ipotesi di induzione se e solo se 
 \begin_inset Formula $(\mathfrak{M},y)\models\mathsf{T}(Q)$
 \end_inset
 
@@ -2734,6 +3504,19 @@ Caso
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -2745,8 +3528,12 @@ casi
 \begin_inset Formula $\land$
 \end_inset
 
- e 
+, 
 \begin_inset Formula $\lor$
+\end_inset
+
+ e 
+\begin_inset Formula $\perp$
 \end_inset
 
  si provano allo stesso modo.
@@ -2803,6 +3590,22 @@ Per ogni frame
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Theorem
 \begin_inset Formula $P\in\mathbf{Int}$
 \end_inset
@@ -2812,6 +3615,22 @@ Per ogni frame
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -2842,6 +3661,19 @@ Per ogni frame
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
