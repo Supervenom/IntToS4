@@ -589,6 +589,212 @@ esistenza
 status open
 
 \begin_layout Plain Layout
+Ancora sull'assioma della scelta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Per far capire l'utilità di 
+\series bold
+AC
+\series default
+ Bertrand Russell scriveva:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+Per scegliere un calzino da ognuna di infinite paia di calzini serve 
+\series bold
+AC
+\series default
+, mentre l’assioma non è necessario se si vuole scegliere una scarpa da
+ ognuna di infinite paia di scarpe.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La quasi totalità dei matematici ritiene 
+\series bold
+AC
+\series default
+ ovvio, ma 
+\series bold
+Gödel
+\series default
+ e 
+\series bold
+Cohen
+\series default
+ hanno dimostrato rispettivamente nel 1937 e nel 1963 che:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $Con(\mathsf{ZF})\rightarrow Con(\mathsf{ZF+AC})$
+\end_inset
+
+ (
+\series bold
+modello interno
+\series default
+) e
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $Con(\mathsf{ZF})\rightarrow Con(\mathsf{ZF+\lnot AC})$
+\end_inset
+
+ (
+\series bold
+forcing
+\series default
+).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+AC
+\series default
+ è cioè 
+\series bold
+indipendente
+\series default
+ (così come l'
+\series bold
+ipotesi del continuo
+\series default
+ 
+\series bold
+CH
+\series default
+) dagli assiomi della 
+\series bold
+teoria degli insiemi
+\series default
+ 
+\series bold
+ZF
+\series default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Banach
+\series default
+ e 
+\series bold
+Tarski
+\series default
+ per scoraggiare l'uso di 
+\series bold
+AC
+\series default
+ nelle dimostrazioni elaborarono un ragionamento che facendo uso di 
+\series bold
+AC
+\series default
+ porta a duplicare il volume di una sfera con soli sezionamenti e rototraslazion
+i.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Le dimostrazioni per assurdo
 \end_layout
 
@@ -3708,6 +3914,174 @@ pause
 \end_inset
 
 .
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+article
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alcuni riferimenti più avanzati
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sia a 
+\series bold
+Int
+\series default
+ sia a 
+\series bold
+S4
+\series default
+ è associata una 
+\series bold
+semantica algebrica
+\series default
+ con cui è possibile far vedere in un altro modo la correttezza della traduzione.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Alle semantiche algebriche è collegata una 
+\series bold
+semantica topologica
+\series default
+ che apre numerose vie di ricerca in diversi campi, dai 
+\series bold
+fondamenti della matematica
+\series default
+ a quelli dei 
+\series bold
+linguaggi di programmazione
+\series default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Esiste una dimostrazione dell'indipendenza di 
+\series bold
+AC
+\series default
+ e 
+\series bold
+CH
+\series default
+ da 
+\series bold
+ZF
+\series default
+ che fa uso di 
+\series bold
+modelli modali
+\series default
+ di 
+\series bold
+ZF
+\series default
+ costruiti su 
+\series bold
+frame preordinati
+\series default
+ (logica 
+\series bold
+S4
+\series default
+).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Esistono versioni 
+\series bold
+costruttive
+\series default
+/
+\series bold
+intuizioniste
+\series default
+ di 
+\series bold
+S4
+\series default
+, con relativa semantica di Kripke.
+ Sono usate per la verifica formale di specifiche hardware.
 \end_layout
 
 \end_deeper
